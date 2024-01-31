@@ -1,15 +1,3 @@
-function preload() {
-    song = loadSound('song.mp3');
-}
-
-function mouseClicked() {
-    if (song.isPlaying()) {
-        song.pause()
-    } else {
-        song.play()
-    }
-}
-
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
     background(0);
     //line Drum
@@ -66,6 +54,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
     }
 
     //The Yellow Oval. bass
+
     let oval_Down = map(bass, 0, 100, 200, 550, true);
     fill(255, 255, 0);
     ellipse(width / 2, 950, oval_Down, oval_Down);
