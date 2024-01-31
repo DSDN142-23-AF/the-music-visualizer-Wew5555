@@ -54,13 +54,13 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
     }
 
     //The Yellow Oval. bass
-    let oval_Down = map(bass, 40, 100, 200, 550, true);
+    let oval_Down = map(bass, 0, 100, 200, 550, true);
     fill(255, 255, 0);
     ellipse(width / 2, 950, oval_Down, oval_Down);
 
     //The White Oval. Vocal
     noStroke();
-    let ovalPlace = map(vocal, 0, 150, 500, 200, true);
+    let ovalPlace = map(vocal, 0, 100, 500, 200, true);
     let ovalSize = map(vocal, 0, 100, 60, 150, true);
     fill(225);
     ellipse(width / 2, ovalPlace, ovalSize);
