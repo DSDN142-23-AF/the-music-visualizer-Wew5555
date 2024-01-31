@@ -1,6 +1,5 @@
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
     background(0);
-    
     //line Drum
     colorMode(HSB, 100);
     strokeWeight(5);
@@ -19,7 +18,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
         line(lineLeft + 475, lineStep, lineRight + 475, lineStep);
         stroke(drum, 80, 80);
     }
-    
+
     //line Bass
     colorMode(HSB, 100);
     strokeWeight(5);
@@ -36,7 +35,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
         line(lineLeft + 425, lineStep, lineRight + 425, lineStep);
         stroke(bass, 80, 80);
     }
-    
+
     //line Other
     colorMode(HSB, 100);
     strokeWeight(5);
@@ -55,20 +54,14 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
     }
 
     //The Yellow Oval. bass
-    
-    
     let oval_Down = map(bass, 40, 100, 200, 550, true);
     fill(255, 255, 0);
     ellipse(width / 2, 950, oval_Down, oval_Down);
-    
+
     //The White Oval. Vocal
     noStroke();
     let ovalPlace = map(vocal, 0, 150, 500, 200, true);
     let ovalSize = map(vocal, 0, 100, 60, 150, true);
     fill(225);
     ellipse(width / 2, ovalPlace, ovalSize);
-    
-    
-
-
 }
