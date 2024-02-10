@@ -106,7 +106,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
         let oval_Down1 = map(vocal, 0, 100, 100, 300);
         let lineLeft = 10;
         let lineRight = 50;
-    
+
         //Drum    
         for (let i = 0; i <= drumMap; i++) {
             let lineStep = i * 10;
@@ -294,7 +294,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
         let oval_Down1 = map(vocal, 0, 100, 100, 300);
         let lineLeft = 10;
         let lineRight = 50;
-        
+
         //Drum
         for (let i = 0; i <= drumMap; i++) {
             let lineStep = i * 10;
